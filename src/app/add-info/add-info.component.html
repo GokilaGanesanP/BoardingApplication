@@ -1,0 +1,97 @@
+<div class="container-xl">
+    <div class="table-responsive">
+      <div class="table-wrapper">
+        <div class="table-title">
+          <div class="row">
+            <div class="col-sm-6">
+              <h4><b>New Boarding Information</b></h4>
+            </div>
+            <div class="col-sm-6">
+              <a href="#" routerLink="" class="btn btn-success back"><i class='fas fa-arrow-circle-left'></i>
+                 Back</a>
+            </div>
+          </div>
+        </div>
+  
+        <div>
+          <form [formGroup]="BoardingForm" (ngSubmit)="onSubmit()">
+  
+          <div class="table-content">
+            <div class="form-group p-10 row">
+              <div class="col-sm-3">
+                <label for="ACEID" class="p-t-b-10">ACE ID<span class="requiredStar">*</span></label>
+              </div>
+              <div class="col-sm-9">
+                <input id="aceid" class="form form-control" type="text" formControlName="aceid">
+              </div>
+  
+            </div>
+  
+            <div class="form-group p-10 row">
+              <div class="col-sm-3">
+                <label for="Fname" class="p-t-b-10">First Name<span class="requiredStar">*</span></label>
+              </div>
+              <div class="col-sm-9">
+                <input id="fname" class="form form-control" type="text" formControlName="fname">
+              </div>
+  
+            </div>
+  
+            <div class="form-group p-10 row">
+              <div class="col-sm-3">
+                <label for="Lname" class="p-t-b-10">Last Name<span class="requiredStar">*</span></label>
+              </div>
+              <div class="col-sm-9">
+                <input id="lname" class="form form-control" type="text" formControlName="lname">
+              </div>
+  
+              
+  
+            </div>
+  
+  
+            <div class="form-group p-10 row">
+              <div class="col-sm-3">
+                <label for="Route" class="p-t-b-10">Route No<span class="requiredStar">*</span></label>
+              </div>
+              <div class="col-sm-9">
+                <input id="route" type="number" class="form form-control" formControlName="route">
+              </div>
+            </div>
+  
+            <div class="form-group p-10 row">
+              <div class="col-sm-3">
+                <label for="Pickup" class="p-t-b-10">Pickup Point<span class="requiredStar">*</span></label>
+              </div>
+              <div class="col-sm-9">
+                <input id="pickup" type="text" class="form form-control" formControlName="pickup">
+              </div>
+            </div>
+  
+            <div class="form-group p-10 row">
+              <div class="col-sm-3">
+                <label for="Drop" class="p-t-b-10">Drop Point<span class="requiredStar">*</span></label>
+              </div>
+              <div class="col-sm-9">
+                <input id="drop" type="text" class="form form-control" formControlName="drop">
+              </div>
+            </div>
+
+            <div class="center-container">            
+            <button type="submit" [disabled]="BoardingForm.invalid" class="center-button btn btn-info">Submit</button>
+            </div>
+
+  
+  
+  
+          </div>
+  
+        </form>
+         
+        
+      </div>
+    </div>
+  </div>
+
+
+  
